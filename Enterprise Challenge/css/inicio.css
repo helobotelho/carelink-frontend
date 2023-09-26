@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+
+body {
+    display: flex;
+    font-family: 'Montserrat', sans-serif !important;
+    background-color: #EEEEEE;
+    font-size: 0.85rem !important;
+}
+
+.divisao__esquerda {
+    width: 50%;
+    position: left;
+}
+
+.esquerda_divisao {
+    position: fixed;    
+    z-index: -1;
+}
+
+
+#textos_divisao {
+    font-family: 'Montserrat', sans-serif;
+    z-index: 999;
+    padding-top: 50%;
+    color: #eee;
+    display: flex;
+    flex-direction:column;
+    justify-content: right;
+align-items: center;
+}
+
+.titulo_slogan {
+    width: 55%;
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+#imagem_logo {
+    width: 60%;
+}
+
+.subtitulo_slogan {
+    width: 55%;
+    font-size: 170%;
+    font-weight: 100;
+    line-height: 1.9rem;
+}
+
+.direita_login {
+    margin-left: 12%;
+    width: 50%;
+    position: right;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+align-items: right;
+margin-top: 10%;
+}
+
+.titulos {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+.coolinput {
+    display: flex;
+    flex-direction: column;
+    width: 35rem;
+    position: static;
+  }
+  
+  .coolinput label.text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85rem;
+    color: #505050;
+    font-weight: 400;
+    position: relative;
+    top: 0.5rem;
+    margin: 0 0 0 14px;
+    padding: 0 3px;
+    background: #eeeeee;
+    width: fit-content;
+  }
+  
+  .coolinput input[type=text].input,  .coolinput input[type=password].input,  .coolinput input[type=email].input {
+    padding: 16px 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.95rem;
+    color: #636363fd;
+    border: 1px rgb(153, 153, 153) solid;
+    border-radius: 5px;
+    background: #e8e8e800;
+    margin-bottom: 1rem;
+  }
+  
+  .coolinput input[type=text].input:focus {
+    outline: none;
+  }
+
+  .botao__form {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.95rem;
+    background-color: #359180;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    padding: 12px;
+    width: 100%;
+    color: #fff;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.75rem;
+    cursor: pointer;
+    transition: 1s;
+    text-decoration: none;
+  }
+
+  .botao__form:hover {
+    transition: 1s;
+    background-color: #287e6e;
+  }
+
+
+
+  .layout {
+    width: 100%;
+    margin-top: 1rem;
+  margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .marginLeft { margin-left: auto; }
+
+  .check_container {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .marginLeft {
+    font-weight: 700;
+color: #359180;
+}
+
+.divisoria {
+    justify-content: center;
+align-items: center;
+    display: flex;
+    width: 100%;
+    margin-top: 3rem;
+    border-bottom: 1px solid #00000036; /* Define uma borda inferior sólida de 1 pixel com a cor preta */
+  }
+
+  .login__primeiro { 
+    color: #359180;
+    font-weight: 700;
+    margin-top: 2rem;
+   margin-left: 25%; 
+}
+
+
+a{
+  color: #359180 !important;
+}
