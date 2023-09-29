@@ -73,6 +73,11 @@ html {
 
 @media screen and (max-width: 1250px) {
 
+  .navbar {
+    display: flex !important;
+  }
+
+    
   .item-icon {
     width: 1rem;
     height: 1rem;  
