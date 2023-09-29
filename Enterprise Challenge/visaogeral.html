@@ -14,8 +14,32 @@
 </head>
 
 <body>
-
     <div class="container-principal">
+
+        <div class="navbar">
+            <div class="container nav-container">
+                <input class="checkbox__burg" type="checkbox" name="" id="" />
+                <div class="hamburger-lines">
+                  <span class="line line1"></span>
+                  <span class="line line2"></span>
+                  <span class="line line3"></span>
+                </div>  
+              <div class="logo">
+                <h1><img src="./images/logo.png" class="logo__menu"></h1>
+              </div>
+              <div class="menu-items">
+
+                <li><img src="./images/computer.png" class="item-icon"><a href="./visaogeral.html">Painel de controle</a></li>
+                <li><img src="./images/personal-collection.png" class="item-icon"><a href="./pacientes.html">Pacientes</a></li>
+                <li><img src="./images/hospital-two.png" class="item-icon"><a href="./integracao.html">Integração</a></li>
+                <li><img src="./images/document-folder.png" class="item-icon"><a href="./relatorios.html">Relatórios e análises</a></li>
+                <li><img src="./images/config.png" class="item-icon"><a href="./config.html">Configurações</a></li>
+                <li><img src="./images/outbound.png" class="item-icon"><a href="./index.html">Sair</a></li>
+              </div>
+            </div>
+          </div>
+
+        </div>
         <nav class="sideBar-lateral">  
             <ul class="">
                 <img src="./images/logo.png" alt="Logo escrita CareLink" id="imagem_logo">
@@ -56,7 +80,7 @@
                     </a>
                 </li>
             </ul>
-        </nav>
+        </nav></div>
 
 
         <div class="visaogeral">
@@ -66,16 +90,23 @@
         <section class="layout">
             <div class="classes">
                 <h1 class="titulo__h1"><img src="./images/heartbeat.png" class="item-icon-2"> Consultas do dia</h1>
-            <div class="space-lista">
-                <h2 class="titulos__visao">Nome</h2>
-                <h2 class="titulos__visao">Horário</h2>
-            </div>
-                <ul>
-            
-                <li class="li-item">Joana Campos &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 10:20</li>
-                <li class="li-item">Marcos Reginaldo &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  12:40</li>
-                <li class="li-item">Bruno Fagundes &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  14:00</li>
-            </ul>
+                <div class="space-lista" id="divisorias">
+                    <h2 class="titulos__visao__1">Nome</h2>
+                    <h2 class="titulos__visao__1">Horário</h2>
+                </div>
+
+                <div class="space-lista" id="divisorias">
+                    <h2 class="titulos__visao__2">Joana Campos</h2>
+                    <h2 class="titulos__visao__2">10:20 AM</h2>
+                </div>
+                <div class="space-lista" id="divisorias">
+                    <h2 class="titulos__visao__2">Marcos Reinaldo</h2>
+                    <h2 class="titulos__visao__2">15:20 PM</h2>
+                </div>
+                <div class="space-lista" id="divisorias">
+                    <h2 class="titulos__visao__2">Bruno Fagundes</h2>
+                    <h2 class="titulos__visao__2">17:20 PM</h2>
+                </div>
             </div>
 
             <section class="layout">
@@ -146,21 +177,21 @@
                             <h1 class="titulo__h1"><img src="./images/paper-money-two.png" class="item-icon-2">Últimas notícias</h1>
                         <div class="space-lista" id="divisorias__noticias">
                             <img src="./images/update.png" class="fotos__noticias">
-                            <h2 class="titulos__visao">Novas atualizações na plataforma CareLink!</h2>
+                            <h2 class="titulos__visao__not">Novas atualizações na plataforma CareLink!</h2>
                         
                         </div>
     
                         <div class="space-lista" id="divisorias__noticias">
                             <img src="./images/saude.png" class="fotos__noticias">
-                            <h2 class="titulos__visao">Juntando área da saúde com novas tecnologias</h2>
+                            <h2 class="titulos__visao__not">Juntando área da saúde com novas tecnologias</h2>
                         </div>
     
                 
                 
                 </div>
+</section>
 
 
-
-
+                <script src="./menutoggle.js"></script>
 </body>
 </html>
