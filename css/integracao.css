@@ -1,17 +1,17 @@
 .integracaco {
-    padding-top: 5%;
-    margin-left: 30rem !important;
+  padding-top: 5%;
+  margin-left: 30rem !important;
 }
 
 .pesquisa-botao {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .botoes_integracao {
-    margin-left: 16rem;
-    width: 100% !important;
-    display: flex;
+  margin-left: 16rem;
+  width: 100% !important;
+  display: flex;
 }
 
 .navbar {
@@ -19,7 +19,7 @@
 }
 
 .botao__form__int {
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 0.95rem;
   background-color: #359180;
   outline: none;
@@ -52,12 +52,66 @@
 }
 
 .filtericon {
-    width: 2.6rem;
-    vertical-align: middle; /* Alinha o ícone verticalmente no meio da célula */
-  margin: -2rem; /* Define a margem do ícone para zero */
-  padding: 0; /* Define o padding do ícone para zero (opcional, dependendo do seu estilo) */
+  width: 2.6rem;
+  vertical-align: middle;
+  /* Alinha o ícone verticalmente no meio da célula */
+  margin: -2rem;
+  /* Define a margem do ícone para zero */
+  padding: 0;
+  /* Define o padding do ícone para zero (opcional, dependendo do seu estilo) */
 }
 
 input {
-    width: 40rem !important;
+  width: 40rem !important;
+}
+
+@media (max-width: 700px) {
+
+  .pesquisa-botao {
+    flex-direction: column;
+  }
+
+  .integracaco {
+    margin-left: 5px !important;
+    margin-right: 5px;
+  }
+
+  .botoes_integracao {
+    margin-left: 0px;
+    flex-direction: column;
+
+  }
+
+  .input {
+    padding: 16px 0px !important;
+  }
+
+  .input,
+  .coolinput {
+    width: 100% !important;
+  }
+
+  .botao__form__int {
+    margin: auto;
+  }
+  .botao__form__int:nth-child(1){
+    margin-bottom: 20px;
+  }
+
+  body>div.integracaco>table>thead>tr>th:nth-child(2),
+  body>div.integracaco>table>tbody>tr:nth-child(1)>td:nth-child(2),
+  body>div.integracaco>table>tbody>tr:nth-child(2)>td:nth-child(2),
+  body>div.integracaco>table>tbody>tr:nth-child(3)>td:nth-child(2),
+  body>div.integracaco>table>tbody>tr:nth-child(4)>td:nth-child(2),
+  body>div.integracaco>table>tbody>tr:nth-child(5)>td:nth-child(2),
+  body>div.integracaco>table>tbody>tr:nth-child(6)>td:nth-child(2),
+  body>div.integracaco>table>tbody>tr:nth-child(7)>td:nth-child(2),
+  body>div.integracaco>table>tbody>tr:nth-child(8)>td:nth-child(2),
+  body>div.integracaco>table>tbody>tr:nth-child(9)>td:nth-child(2) {
+    display: none;
+  }
+
+  .checkbox__burg {
+    width: 100% !important;
+  }
 }
