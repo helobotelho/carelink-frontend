@@ -1,56 +1,56 @@
 /* ===== Scrollbar CSS ===== */
-  /* Firefox */
-  * {
-    scrollbar-width: auto;
-    scrollbar-color: #515151 #ffffff;
-  }
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #515151 #ffffff;
+}
 
-  /* Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-    width: 8px;
-  }
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+}
 
-  *::-webkit-scrollbar-track {
-    background: #f5f5f5;
-  }
+*::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
 
-  *::-webkit-scrollbar-thumb {
-    background-color: #515151;
-    border-radius: 0px;
-    border: 0px none #f2f2f2;
-  }
+*::-webkit-scrollbar-thumb {
+  background-color: #515151;
+  border-radius: 0px;
+  border: 0px none #f2f2f2;
+}
 
-  #espacamento-table {
-    padding-top: 3.5rem !important;
-  }
+#espacamento-table {
+  padding-top: 3.5rem !important;
+}
 
-  .navbar {
-    display: none;
-  }
+.navbar {
+  display: none;
+}
 
 .cabecalho {
-    padding-top: 2rem;
-    margin-left: 30rem !important;
+  padding-top: 2rem;
+  margin-left: 30rem !important;
 }
 
 .flexbox-pacientes {
-    width: 92%;
-    justify-content: space-between;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  width: 92%;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .item-icon-back {
-    width: 2rem;
-    height: 2rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 .pacientes {
-    width: 72%;
-    padding-top: 2% !important;
-    display: flex;
-    justify-content: space-between;
+  width: 72%;
+  padding-top: 2% !important;
+  display: flex;
+  justify-content: space-between;
 }
 
 .caixas-select {
@@ -59,71 +59,72 @@
 }
 
 .coolinput {
-    margin-top: -1rem !important;
-    width: 40rem !important;
-  }
+  margin-top: -1rem !important;
+  width: 40rem !important;
+}
 
-  .coolinput select.input {
-    width: 19.5rem !important;
-    padding: 16px 12px !important;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 0.95rem;
-    color: #636363fd;
-    border: 1px rgb(153, 153, 153) solid;
-    border-radius: 5px;
-    background: #e8e8e800;
-    margin-bottom: 1rem;
-    margin-right: 1rem;
-    width: calc(100% - 32px); /* Ajuste conforme necessário */
+.coolinput select.input {
+  width: 19.5rem !important;
+  padding: 16px 12px !important;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  color: #636363fd;
+  border: 1px rgb(153, 153, 153) solid;
+  border-radius: 5px;
+  background: #e8e8e800;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  width: calc(100% - 32px);
+  /* Ajuste conforme necessário */
 }
 
 .coolinput select.input:focus {
-    outline: none;
+  outline: none;
 }
 
 
-.checkbox_filtros { 
+.checkbox_filtros {
   display: flex;
   gap: 0.2rem;
   line-height: 2rem;
-        margin-bottom: 1.75rem;
-        margin-left: -20.6rem;
+  margin-bottom: 1.75rem;
+  margin-left: -20.6rem;
 }
 
-  .caixa-paciente {
-    padding-top: 2rem;
-    margin-left: 30rem !important;
-    display: flex;
-    gap: 20px;
-  }
+.caixa-paciente {
+  padding-top: 2rem;
+  margin-left: 30rem !important;
+  display: flex;
+  gap: 20px;
+}
 
-  strong {
-    font-weight: 700;
-  }
+strong {
+  font-weight: 700;
+}
 
 .dados-lista {
-    line-height: 1.5rem;
-  }
+  line-height: 1.5rem;
+}
 
-  .nome-paciente {
-    font-size: 1.75rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-  }
+.nome-paciente {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
 
-  .texto-imagem{
-    width: 12rem;
-    height: 8.2rem;
-    margin-top: 1rem;
-    margin-left: 12rem;
-  }
+.texto-imagem {
+  width: 12rem;
+  height: 8.2rem;
+  margin-top: 1rem;
+  margin-left: 12rem;
+}
 
-  .texto-imagem2{
-    width: 14rem;
-    height: 8.2rem;
-    margin-top: 1rem;
-    margin-left: 6rem;
-  }
+.texto-imagem2 {
+  width: 14rem;
+  height: 8.2rem;
+  margin-top: 1rem;
+  margin-left: 6rem;
+}
 
 .subtitulo-icons {
   align-items: center;
@@ -151,24 +152,25 @@
   margin-right: 1rem;
 }
 
-  .caixa-registros {
-width: 72%;
-padding-top: 1rem;
-    margin-left: 30rem !important;
-  }
+.caixa-registros {
+  width: 72%;
+  padding-top: 1rem;
+  margin-left: 30rem !important;
+  margin-bottom: 50px;
+}
 
-  .caixa {
-    width: 100%;
-    height: 22rem;
-    padding: 10px;
-    margin: 8px;
-    background-color: #E6E6E6;
-    border-radius: 10px;
+.caixa {
+  width: 100%;
+  height: 22rem;
+  padding: 10px;
+  margin: 8px;
+  background-color: #E6E6E6;
+  border-radius: 10px;
 }
 
 .scroll-box {
-    max-height: 250px;
-    overflow-y: auto;
+  max-height: 250px;
+  overflow-y: auto;
 }
 
 
@@ -190,7 +192,8 @@ table.grayTable {
   border-collapse: collapse;
 }
 
-table.grayTable td, table.grayTable th {
+table.grayTable td,
+table.grayTable th {
   padding: 12px 28px;
 }
 
@@ -212,7 +215,7 @@ table.grayTable thead th {
   font-weight: 600;
 }
 
-tr{
+tr {
   padding: 1rem;
   border-bottom: solid 1px #c5c5c59f;
 }
@@ -220,7 +223,8 @@ tr{
 .td-bold-class {
   font-weight: 600 !important;
   color: #000000 !important;
-  text-decoration: underline !important;;
+  text-decoration: underline !important;
+  ;
 }
 
 .td-class-bold {
@@ -234,10 +238,12 @@ tr{
 .titulo-table {
   background-color: #35918017;
   font-size: 1.2rem !important;
-  font-weight:  700 !important;
+  font-weight: 700 !important;
 }
 
-#popup-btn, #popup-btn-2, #popup-btn-3 {
+#popup-btn,
+#popup-btn-2,
+#popup-btn-3 {
   background-color: transparent !important;
   text-decoration: none !important;
   border: none !important;
@@ -257,7 +263,7 @@ tr{
   color: #359180;
 }
 
-.caixa__receitas {  
+.caixa__receitas {
   margin-top: -1rem;
   display: grid;
   grid-template-columns: 1fr 2.5fr;
@@ -269,13 +275,21 @@ tr{
     "Acessar-bula descrição-medicamento";
 }
 
-.Tabela { grid-area: Tabela; }
+.Tabela {
+  grid-area: Tabela;
+}
 
-.Foto-remedio { grid-area: Foto-remedio; }
+.Foto-remedio {
+  grid-area: Foto-remedio;
+}
 
-.Acessar-bula { grid-area: Acessar-bula; }
+.Acessar-bula {
+  grid-area: Acessar-bula;
+}
 
-.descrição-medicamento { grid-area: descrição-medicamento; }
+.descrição-medicamento {
+  grid-area: descrição-medicamento;
+}
 
 .remedio_img {
   width: 9rem;
@@ -301,7 +315,8 @@ table.customTable {
   border-collapse: collapse;
 }
 
-table.customTable td, table.customTable th {
+table.customTable td,
+table.customTable th {
   border-bottom: 1px;
   border-color: #EDE6E6;
   border-style: solid;
@@ -322,14 +337,14 @@ table.customTable td, table.customTable th {
 
 .subtitulo-popup {
   font-family: 'Montserrat', sans-serif !important;
- display: flex;
- margin-left: 0.2rem;
-        font-size: 1.5rem;
-        font-weight: 700;
-        margin-top: 0.75rem;
-        margin-bottom: 2rem;
-        padding-bottom: 1.25rem;
-        border-bottom: solid 1px #c5c5c59f;
+  display: flex;
+  margin-left: 0.2rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 0.75rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1.25rem;
+  border-bottom: solid 1px #c5c5c59f;
 }
 
 #overlay {
@@ -343,7 +358,8 @@ table.customTable td, table.customTable th {
   z-index: 999;
 }
 
-#popup_3, .popup_3 {
+#popup_3,
+.popup_3 {
   width: 35% !important;
   min-width: 25rem !important;
 }
@@ -352,14 +368,18 @@ table.customTable td, table.customTable th {
   margin-top: -33rem !important;
 }
 
-#popup, .popup_2, #popup_2, #popup_3, .popup_3{
+#popup,
+.popup_2,
+#popup_2,
+#popup_3,
+.popup_3 {
   border-radius: 10px;
   max-width: 40rem;
   display: none;
   position: fixed;
   background-color: #f9f9f9;
   min-width: 150px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1000;
   padding: 20px;
   left: 50%;
@@ -368,7 +388,9 @@ table.customTable td, table.customTable th {
   text-align: center;
 }
 
-#close-btn, #close-btn-2, #close-btn-3 {
+#close-btn,
+#close-btn-2,
+#close-btn-3 {
   background-color: transparent !important;
   text-decoration: none !important;
   border: none !important;
@@ -427,3 +449,51 @@ table.customTable td, table.customTable th {
   background-color: #287e6e;
 }
 
+@media (max-width: 700px) {
+  .cabecalho {
+    margin-left: 20px !important;
+  }
+
+  .pacientes {
+    display: flex;
+    flex-direction: column;
+  }
+  .coolinput{
+    width: 100% !important;
+  }
+
+  .caixa-paciente{
+    margin-left: 20px !important;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+  }
+
+  .texto-imagem{
+    margin-left:0;
+  }
+
+  .texto-imagem2{
+    margin-left: 0;
+  }
+  .caixa-registros{
+    margin-left: 20px !important;
+  }
+
+  .caixas-scroll{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #popup{
+    width: 300px;
+  }
+
+  .checkbox_filtros{
+    margin-left: 0;
+  }
+  .caixas-select{
+    display: flex;
+    flex-direction: column;
+  }
+}
