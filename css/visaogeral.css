@@ -36,6 +36,8 @@ html {
     height: 250px;
     width: 440px;
     padding-left: 1em;
+    z-index: -2;
+    
 }
 
 .layout {
@@ -267,7 +269,7 @@ flex-wrap: wrap;
   position: absolute;
   width: 2.3rem;
   left: 80%;
-  z-index: 999;
+  z-index: -1;
   top: 150px;
 }
 
