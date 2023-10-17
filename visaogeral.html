@@ -14,6 +14,18 @@
 </head>
 
 <body>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+
     <div class="container-principal">
 
         <div class="navbar">
@@ -43,7 +55,7 @@
         <nav class="sideBar-lateral">  
             <ul class="">
                 <img src="./images/logo.png" alt="Logo escrita CareLink" id="imagem_logo">
-                <li class="menu-item">
+                <li class="menu-item" id="class-active">
                     <a href="./visaogeral.html" class="item-active">
                         <img src="./images/computer.png" class="item-icon">
                         <label class="item-descricao">Painel de controle</label>   

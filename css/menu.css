@@ -12,6 +12,11 @@ html {
     width: 60%;
 }
 
+#class-active {
+  background-color: #2D7B6D;
+  width: 84%;
+}
+
 /* side-bar */
 .sideBar-lateral {
     background-color: #359180;
@@ -43,7 +48,12 @@ html {
 
 .menu-item:hover {
     background-color: #2D7B6D;
-    width: 84%;
+    width: 82%;
+}
+
+.menu-item:focus, .menu-item:active {
+  background-color: #2D7B6D;
+  width: 84%;
 }
 
 /* definindo o tamanho dos ícones */
@@ -102,17 +112,18 @@ html {
     }
     
     .navbar {
-      display: flex;
-      width: 100%;
+      z-index: 999 !important;
       background-color: #2D7B6D;
       box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
     }
     
     .nav-container {
-      display: flex;
+      display: block;
       justify-content: space-between;
       align-items: center;
       height: 62px;
+      width: 100vw !important;
+      z-index: 999 !important;
     }
     
     .navbar .menu-items {

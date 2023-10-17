@@ -96,7 +96,22 @@
   margin-left: 30rem !important;
   display: flex;
   gap: 20px;
+  flex-wrap: nowrap;
 }
+
+.caixa-informacoes {
+  margin-left: 10px !important;
+  display: flex;
+  gap: 4rem;
+}
+
+
+  .caixa-paciente-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
 
 strong {
   font-weight: 700;
@@ -433,7 +448,6 @@ table.customTable th {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  transition: 1s;
   text-decoration: none;
 }
 
@@ -449,24 +463,51 @@ table.customTable th {
   background-color: #287e6e;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1250px) {
   .cabecalho {
     margin-left: 20px !important;
   }
+
+.barra-pesquisa {
+  margin-top: 1rem;
+  display: flex !important;
+margin-left: 14%;
+  width: 100%;
+}
 
   .pacientes {
     display: flex;
     flex-direction: column;
   }
+
+#input-popup {
+  width: 28.2rem !important;
+}
+
   .coolinput{
     width: 100% !important;
   }
 
+.caixa-informacoes {
+  margin-left: 10px !important;
+  display: flex;
+  gap: 4rem;
+}
+
   .caixa-paciente{
-    margin-left: 20px !important;
+    margin-left: 10px !important;
     display: flex;
-    flex-direction: column;
-    max-width: 300px;
+flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .caixa-paciente-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
   }
 
   .texto-imagem{
@@ -486,8 +527,12 @@ table.customTable th {
   }
 
   #popup{
-    width: 300px;
+    width: 400px;
   }
+
+.foto-paciente {
+  width: 30%;
+}
 
   .checkbox_filtros{
     margin-left: 0;
@@ -495,5 +540,135 @@ table.customTable th {
   .caixas-select{
     display: flex;
     flex-direction: column;
+  }
+
+  .coolinput select.input {
+    width: 90% !important;
+  }
+
+  .caixas-input-popup {
+    margin-left: -2rem !important;
+  }
+
+  .botao__form {
+    width: 90%;
+    display: flex;
+    margin-left: 0rem !important;
+  }
+
+  .caixa-registros {
+    width: 85% !important;
+  }
+}
+
+@media (min-width: 1250px) and (max-width: 1500px) { 
+  .cabecalho {
+    margin-left: 20px !important;
+  }
+
+.barra-pesquisa {
+  margin-top: 1rem;
+  display: flex !important;
+margin-left: 6%;
+  width: 100%;
+}
+
+  .pacientes {
+    display: flex;
+    flex-direction: column;
+  }
+
+#input-popup {
+  width: 28.2rem !important;
+}
+
+  .coolinput{
+    width: 100% !important;
+  }
+
+.caixa-informacoes {
+  margin-left: 12px !important;
+  display: flex;
+  gap: 4rem;
+}
+
+  .caixa-paciente{
+    margin-left: 12rem !important;
+    display: flex;
+flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .caixa-paciente-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .texto-imagem{
+    margin-left:0;
+  }
+
+  .texto-imagem2{
+    margin-left: 0;
+  }
+  .caixa-registros{
+    margin-left: 20px !important;
+  }
+
+  .caixas-scroll{
+    display: flex;
+    flex-direction: row;
+  }
+
+  #popup{
+    width: 400px;
+  }
+
+.foto-paciente {
+  width: 30%;
+}
+
+  .checkbox_filtros{
+    margin-left: 0;
+  }
+
+  .caixas-select{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .coolinput select.input {
+    width: 90% !important;
+  }
+
+  .caixas-input-popup {
+    margin-left: -2rem !important;
+  }
+
+  .botao__form {
+    width: 90%;
+    display: flex;
+    margin-left: 0rem !important;
+  }
+
+.subtitulo {
+  margin-left: 20% !important;
+}
+
+.caixas-scroll {
+margin-left: 19%;
+}
+
+  .caixa-registros {
+    width: 95% !important;
+  }
+
+  .cabecalho, .item-icon-back {
+    z-index: 999 !important;
+    margin-left: 20%;
   }
 }

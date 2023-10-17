@@ -18,6 +18,17 @@
 
 <body>
 
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+
     <div class="container-principal">
 
         <div class="navbar">
@@ -59,7 +70,7 @@
                         <label class="item-descricao">Pacientes</label>     
                     </a>
                 </li>
-                <li class="menu-item">
+                <li class="menu-item" id="class-active">
                     <a href="./integracao.html" class="item-active">
                         <img src="./images/hospital-two.png" class="item-icon">
                         <label class="item-descricao">Integração</label>        
@@ -112,36 +123,37 @@
 
 
 
+        <div class="position-table">
             <h1 class="subtitulo">Conexões com hospitais e clínicas</h1>
 
             <table class="blueTable">
                 <thead>
                 <tr>
                 <th>Nome</th>
-                <th>Local</th>
-                <th>Fundador (a)</th>
-                <th><img src="./images/filter.png" class="filtericon"></th>
+                <th class="hide-on-mobile-hour">Local</th>
+                <th class="hide-on-mobile">Fundador (a)</th>
+                <th class="hide-on-mobile"><img src="./images/filter.png" class="filtericon"></th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
-                <td class="td-bold-class">Hospital São Luiz</td><td>Cotia, São Paulo</td><td>Dr. Marcos Campos</td></tr>
+                <td class="td-bold-class">Hospital São Luiz</td><td class="hide-on-mobile-hour">Cotia, São Paulo</td><td class="hide-on-mobile">Dr. Marcos Campos</td></tr>
                 <tr>
-                <td class="td-bold-class">Clínica Albert Hei</td><td>Nova Esperança, Paraná</td><td>Dra. Leila Lins</td></tr>
+                <td class="td-bold-class">Clínica Albert Hei</td><td class="hide-on-mobile-hour">Nova Esperança, Paraná</td><td class="hide-on-mobile">Dra. Leila Lins</td></tr>
                 <tr>
-                <td class="td-bold-class">Clínica Saúde Total</td><td>Salvador, Bahia</td><td>Dr. Rafael Montenegro</td></tr>
+                <td class="td-bold-class">Clínica Saúde Total</td><td class="hide-on-mobile-hour">Salvador, Bahia</td><td class="hide-on-mobile">Dr. Rafael Montenegro</td></tr>
                 <tr>
-                <td class="td-bold-class">Hospital Vida Nova</td><td>Porto Alegre, Rio Grande do Sul</td><td>Valeria Mendes</td></tr>
+                <td class="td-bold-class">Hospital Vida Nova</td><td class="hide-on-mobile-hour">Porto Alegre, Rio Grande do Sul</td><td class="hide-on-mobile">Valeria Mendes</td></tr>
                 <tr>
-                <td class="td-bold-class">Clínica Bem-Estar</td><td>Santos, São Paulo</td><td>Dr. Alexandre Ferreira</td></tr>
+                <td class="td-bold-class">Clínica Bem-Estar</td><td class="hide-on-mobile-hour">Santos, São Paulo</td><td class="hide-on-mobile">Dr. Alexandre Ferreira</td></tr>
                 <tr>
-                <td class="td-bold-class">Hospital Esperança</td><td>Ribeirão Preto, São Paulo</td><td>Dra. Antonella Costa</td></tr>
+                <td class="td-bold-class">Hospital Esperança</td><td class="hide-on-mobile-hour">Ribeirão Preto, São Paulo</td><td class="hide-on-mobile">Dra. Antonella Costa</td></tr>
                 <tr>
-                    <td class="td-bold-class">Hospital Central</td><td>Sorocaba, São Paulo</td><td>Valentina Siqueira</td></tr>
+                    <td class="td-bold-class">Hospital Central</td><td class="hide-on-mobile-hour">Sorocaba, São Paulo</td><td class="hide-on-mobile">Valentina Siqueira</td></tr>
                     <tr>
-                        <td class="td-bold-class">Clínica Harmonia Saúde</td><td>São Bernardo do Campo, São Paulo</td><td>Henrique Barros</td></tr>
+                        <td class="td-bold-class">Clínica Harmonia Saúde</td><td class="hide-on-mobile-hour">São Bernardo do Campo, São Paulo</td><td class="hide-on-mobile">Henrique Barros</td></tr>
                         <tr>
-                            <td class="td-bold-class">Clínica Médica</td><td>São José dos Campos, São Paulo</td><td>Dra. Carolina Albuquerque</td></tr>
+                            <td class="td-bold-class">Clínica Médica</td><td class="hide-on-mobile-hour">São José dos Campos, São Paulo</td><td class="hide-on-mobile">Dra. Carolina Albuquerque</td></tr>
                 </tbody>
                 </tr>
                 <tfoot>
@@ -152,7 +164,7 @@
                     </tr>
                     </tfoot>
                 </table>
-
+            </div>
             </div>
             <script src="newFile.js"> </script>
 </body>

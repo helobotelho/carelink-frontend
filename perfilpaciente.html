@@ -13,7 +13,19 @@
     rel=stylesheet>
   </head>
 
-  <body>
+  <body> 
+
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
     <div class="container-principal">
 
       <div class="navbar">
@@ -53,7 +65,7 @@
               <label class="item-descricao">Painel de controle</label>
             </a>
           </li>
-          <li class="menu-item">
+          <li class="menu-item" id="class-active">
             <a href="./pacientes.html" class="item-active">
               <img src="./images/personal-collection.png" class="item-icon" />
               <label class="item-descricao">Pacientes</label>
@@ -88,7 +100,7 @@
     </div>
 
     <div class="cabecalho">
-      <a href="./pacientes.html" class="item-active"
+      <a href="javascript:history.back()" class="item-active"
         ><img src="./images/back.png" class="item-icon-back"
       /></a>
     </div>
@@ -100,7 +112,9 @@
 <div id="popup">
     <button id="close-btn"><img src="./images/close-one.png"></button>
     <h1 class="subtitulo-popup">Filtrar pesquisa</h1>
-    <div class="coolinput">
+
+    <div class="caixas-input-popup">
+    <div class="coolinput" id="input-popup">
       <label for="input" class="text">Tipo de exame</label>
       <input
         type="email"
@@ -145,6 +159,7 @@
       <button type=submit class=botao__form>
           <span><img src="./images/filter white.png">Filtrar</span>
       </button>
+    </div>
       <div class="divisoria"></div>
   </div>
 </div>
@@ -163,6 +178,7 @@
 
     <div class="pacientes">
       <h1 class="titulozao">Perfil do paciente</h1>
+      <div class="barra-pesquisa">
       <div class="coolinput">
         <label for="input" class="text">Pesquisar</label>
         <input
@@ -172,9 +188,11 @@
           class="input"
         />
       </div>
+      </div>
     </div> 
     
       <div class="caixa-paciente">
+        <div class="caixa-paciente-mobile">
         <img src="./images/fotopaciente.png" class="foto-paciente" />
 
         <div class="dados-paciente">
@@ -189,8 +207,11 @@
             <li class="dados-lista"><strong>IMC:</strong> 25.22 (Sobrepeso)</li>
           </ul>
         </div>
+        </div>
+
+        <div class="caixa-informacoes">
         <img src="./images/Group 85.png" class="texto-imagem" />
-        <img src="./images/Group 86.png" class="texto-imagem2" />
+        <img src="./images/Group 86.png" class="texto-imagem2" /></div>
       </div>
         </div>
 

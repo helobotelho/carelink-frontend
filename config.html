@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang=pt-BR>
+
+<head>
+    <meta charset=UTF-8>
+    <meta http-equiv=X-UA-Compatible content="IE=edge">
+    <meta name=viewport content="width=device-width, initial-scale=1.0">
+    <meta name=description content="CareLink: Integração de dados em saúde">
+    <title>CareLink: Visão Geral</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+    <link href=./css/reset.css rel=stylesheet>
+    <link href=./css/menu.css rel=stylesheet>
+    <link href=./css/config.css rel=stylesheet>
+    <link href=./css/visaogeral.css rel=stylesheet>
+</head>
+
+<body>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+
+    <div class="container-principal">
+
+        <div class="navbar">
+            <div class="container nav-container">
+                <input class="checkbox__burg" type="checkbox" name="" id="" />
+                <div class="hamburger-lines">
+                  <span class="line line1"></span>
+                  <span class="line line2"></span>
+                  <span class="line line3"></span>
+                </div>  
+              <div class="logo">
+                <h1><img src="./images/logo.png" class="logo__menu"></h1>
+              </div>
+              <div class="menu-items">
+
+                <li><img src="./images/computer.png" class="item-icon"><a href="./visaogeral.html">Painel de controle</a></li>
+                <li><img src="./images/personal-collection.png" class="item-icon"><a href="./pacientes.html">Pacientes</a></li>
+                <li><img src="./images/hospital-two.png" class="item-icon"><a href="./integracao.html">Integração</a></li>
+                <li><img src="./images/document-folder.png" class="item-icon"><a href="./relatorios.html">Relatórios e análises</a></li>
+                <li><img src="./images/config.png" class="item-icon"><a href="./config.html">Configurações</a></li>
+                <li><img src="./images/outbound.png" class="item-icon"><a href="./index.html">Sair</a></li>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <nav class="sideBar-lateral">  
+            <ul class="">
+                <img src="./images/logo.png" alt="Logo escrita CareLink" id="imagem_logo">
+                <li class="menu-item">
+                    <a href="./visaogeral.html" class="item-active">
+                        <img src="./images/computer.png" class="item-icon">
+                        <label class="item-descricao">Painel de controle</label>   
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="./pacientes.html" class="item-active">
+                        <img src="./images/personal-collection.png" class="item-icon">
+                        <label class="item-descricao">Pacientes</label>     
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="./integracao.html" class="item-active">
+                        <img src="./images/hospital-two.png" class="item-icon">
+                        <label class="item-descricao">Integração</label>        
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="./relatorios.html" class="item-active">
+                        <img src="./images/document-folder.png" class="item-icon">
+                        <label class="item-descricao">Relatórios e análises</label>                                                    
+                    </a>
+                </li>
+                <li class="menu-item" id="class-active">
+                    <a href="./config.html" class="item-active">
+                        <img src="./images/config.png" class="item-icon">
+                        <label class="item-descricao">Configurações</label>                                                    
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="./index.html" class="item-active">
+                        <img src="./images/outbound.png" class="item-icon">
+                        <label class="item-descricao">Sair</label>                                                    
+                    </a>
+                </li>
+            </ul>
+        </nav></div>
+
+
+        <div class="visaogeral">
+            <h1 class="titulozao">Configurações</h1>
+
+            <div class="flex-container">
+
+                <div class="flex-items">
+
+                    <img src="./images/fotomedica.png" style="width: 80%" class="image-medica">
+                    <h1 class="nome">Márcia Ricci</h1>
+<p class="subtitulo">Cardiologista</p>
+<p class="subtitulo-sub">CRM 84.545</p>
+<br><br>
+<p class="text">Membro desde: <strong>Abril de 2019</strong></p>
+<br><br>
+<a href="./config.html"><button class="botao-config"><img src="./images/Account.png" style="margin-right:4px; width:16px;"></span>Editar perfil</button></a>
+<a href="./notif.html"><button class="botao-config"><span><img src="./images/Notifications.png" style="margin-right:4px; width:16px;"></span>Notificações</button></a>
+<button class="botao-config"><span><img src="./images/Security Shield Green.png" style="margin-right:4px; width:16px;"></span>Privacidade e segurança</button>
+                </div>
+
+
+                <div class="flex-items" id="flex-form">
+                    <h2 class="nome" style="margin-bottom: 2rem;">Editar perfil</h2>
+
+
+                    <div class="formularios">
+                    <div class="coolinput">
+                        <label for="input" class="text" id="label_file">Nome Completo</label>
+                        <input type="email" name="input" class="input" value="Márcia Ricci" style="color: black; font-weight: 500;">
+                        </div>
+
+                        <div class="coolinput">
+                            <label for="input" class="text" id="label_file">Data de Nascimento</label>
+                            <input type="date" name="input" class="input" value="1989-08-20" style="color: black; font-weight: 500;">
+                        </div>
+
+                            <div class="coolinput">
+                                <label for="input" class="text" id="label_file">CRM</label>
+                                <input type="number" name="input" class="input" value="434.656" style="color: black; font-weight: 500;">
+                                </div>
+
+                                <div class="coolinput">
+                                    <label for="input" class="text" id="label_file">E-mail</label>
+                                    <input type="email" name="input" class="input" value="marciaricci@einstein.com" style="color: black; font-weight: 500;">
+                                    </div>
+
+                                    <div class="coolinput">
+                                        <label for="input" class="text" id="label_file">CEP</label>
+                                        <input type="text" name="input" class="input" value="34535-980" style="color: black; font-weight: 500;">
+                                        </div>
+
+                                        <div class="coolinput">
+                                            <label for="input" class="text" id="label_file">Número do endereço</label>
+                                            <input type="number" name="input" class="input" value="430" style="color: black; font-weight: 500;">
+                                            </div>
+
+                                            <div class="coolinput">
+                                                <label for="input" class="text" id="label_file">Telefone</label>
+                                                <input type="number" name="input" class="input" value="998786543" style="color: black; font-weight: 500;">
+                                                </div>
+
+                                               
+                                                <div class="coolinput">
+                                                    <label for="input" class="text" id="label_file">Local de atendimento</label>
+                                                    <input type="text" name="input" class="input" value="Hospital Albert Einstein" style="color: black; font-weight: 500;">
+                                                    </div>
+
+                                                    <div class="coolinput">
+                                                        <label for="input" class="text" id="label_file">Alterar senha</label>
+                                                        <input type="password" name="input" class="input" value="#marcia123" style="color: black; font-weight: 500;">
+                                                        </div>
+                    </div>
+                    <div class="botao-container">
+                        <button class="botao-final" onclick="salvarAlteracoes()">
+                          <span><img src="./images/Account.png" style="margin-right:4px; width:16px;"></span>
+                          Salvar alterações
+                        </button>
+                        
+                        <div id="loading" class="escondido">
+                            <div class="dot-spinner">
+                                <div class="dot-spinner__dot"></div>
+                                <div class="dot-spinner__dot"></div>
+                                <div class="dot-spinner__dot"></div>
+                                <div class="dot-spinner__dot"></div>
+                                <div class="dot-spinner__dot"></div>
+                                <div class="dot-spinner__dot"></div>
+                                <div class="dot-spinner__dot"></div>
+                                <div class="dot-spinner__dot"></div>
+                            </div>
+                        </div>
+                        
+                        <div id="mensagem" class="escondido"><img src="./images/Checkmark Star.png" style="margin-right:4px; width:12px;">Alterações salvas!</div>
+                      </div>
+                      
+                </div>
+            
+            </div>
+             </div>
+            </div>
+
+            <script src="salvar.js"> </script>
+</body>
+</html>

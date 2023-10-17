@@ -1,0 +1,282 @@
+  .subtitulo-popup {
+    font-family: 'Montserrat', sans-serif !important;
+    display: flex;
+    margin-left: 0.2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 0.75rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1.25rem;
+    border-bottom: solid 1px #c5c5c59f;
+  }
+  
+  #overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.616);
+    z-index: 999;
+  }
+  
+  #popup_3,
+  .popup_3 {
+    width: 35% !important;
+    min-width: 25rem !important;
+  }
+  
+  .tr-table {
+    margin-top: -33rem !important;
+  }
+
+  table.blueTable {
+    margin-left: 0rem;
+    background-color: #d9d9d9af;
+    width: 92%;
+    height: 100%;
+    text-align: left;
+    align-items: center;
+    border-collapse: collapse;
+  }
+  
+  #popup,
+  .popup_2,
+  #popup_2,
+  #popup_3,
+  .popup_3 {
+    border-radius: 10px;
+    max-width: 40rem;
+    display: none;
+    position: fixed;
+    background-color: #f9f9f9;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    padding: 20px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  #close-btn,
+  #close-btn-2,
+  #close-btn-3,
+  #close-btn-pdf,
+  #close-btn-pdf_2 {
+    background-color: transparent !important;
+    text-decoration: none !important;
+    border: none !important;
+    cursor: pointer;
+    float: right;
+  }
+
+  #close-btn:hover,
+  #close-btn-2:hover,
+  #close-btn-3:hover,
+  #close-btn-pdf:hover,
+  #close-btn-pdf_2:hover {
+    background-color: #ff1d4693 !important;
+    border-radius: 40rem;
+  }
+
+  
+  #popup ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #popup li {
+    padding: 10px;
+  }
+  
+  #popup li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+  }
+  
+  #popup li a:hover {
+    background-color: #ddd;
+  }
+  
+  .botao__form {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.95rem;
+    background-color: #359180;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    margin-top: 2rem;
+   margin-left: 50%;
+    padding: 12px 2px 12px 0px;
+    width: 50%;
+    color: #fff;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .botao__form span {
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  
+  .botao__form:hover {
+    transition: 1s;
+    background-color: #287e6e;
+  }
+
+  .popup__pdf {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.icon-paciente {
+    cursor: pointer;
+}
+
+.icon-paciente:hover {
+    background-color: #74CABA;
+    border-radius: 5px;
+}
+
+
+#pdfFrame, #pdfFrame_2 {
+    border: none;
+    width: 40vw; /* Ocupa 100% do espaço disponível na popup */
+    height: 30vw; /* Ocupa 100% do espaço disponível na popup */
+}
+
+@media (max-width: 1250px) {
+  #pdfFrame {
+  width: 100%;
+  height: 90%;
+}
+
+#popup {
+  width: 80%;
+}
+
+.popup-content {
+  width: 80%;
+  height: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+  #caixa__mobile {
+    margin-left: 0rem;
+    width: 100%;
+  }
+
+  .checkbox_filtros {
+    text-wrap: wrap;
+    display: flex;
+    gap: 0.5rem;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.2rem !important;
+  }
+
+  .botao {
+    width: 30% !important;
+  }
+}
+
+
+@media (min-width: 1250px) and (max-width: 1500px) {
+
+.pacientes {
+  margin-left: 16rem !important;
+}
+
+.titulozao {
+  margin-left: 4rem !important;
+  margin-bottom: 3rem;
+}
+
+  #popup,
+  .popup_2,
+  #popup_2,
+  #popup_3,
+  .popup_3 {
+    border-radius: 10px;
+    display: none;
+    width: 60%;
+    position: fixed;
+    background-color: #f9f9f9;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    padding: 20px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  #caixa__mobile {
+    margin-left: 0rem;
+    width: 100%;
+  }
+
+  .checkbox_filtros {
+    text-wrap: wrap;
+    display: flex;
+    gap: 0.5rem;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.2rem !important;
+  }
+
+  .botao {
+    width: 10% !important;
+  }
+
+  .abertos-recentemente {
+    width: 100%;
+    margin-left: -16rem;
+  }
+}
+
+

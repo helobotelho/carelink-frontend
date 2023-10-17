@@ -6,12 +6,13 @@
     <meta http-equiv=X-UA-Compatible content="IE=edge">
     <meta name=viewport content="width=device-width, initial-scale=1.0">
     <meta name=description content="CareLink: Integração de dados em saúde">
-    <title>CareLink: Pacientes</title>
+    <title>CareLink: Relatórios</title>
     <link rel="icon" type="image/x-icon" href="./images/favicon.png">
     <link href=./css/reset.css rel=stylesheet>
     <link href=./css/menu.css rel=stylesheet>
     <link href=./css/visaogeral.css rel=stylesheet>
     <link href=./css/pacientes.css rel=stylesheet>
+    <link href=./css/relatorios.css rel=stylesheet>
 </head>
 
 <body>
@@ -62,7 +63,7 @@
                         <label class="item-descricao">Painel de controle</label>   
                     </a>
                 </li>
-                <li class="menu-item" id="class-active">
+                <li class="menu-item">
                     <a href="./pacientes.html" class="item-active">
                         <img src="./images/personal-collection.png" class="item-icon">
                         <label class="item-descricao">Pacientes</label>     
@@ -74,7 +75,7 @@
                         <label class="item-descricao">Integração</label>        
                     </a>
                 </li>
-                <li class="menu-item">
+                <li class="menu-item" id="class-active">
                     <a href="./relatorios.html" class="item-active">
                         <img src="./images/document-folder.png" class="item-icon">
                         <label class="item-descricao">Relatórios e análises</label>                                                    
@@ -95,8 +96,66 @@
             </ul>
         </nav>
 
+
+        <div id="overlay"></div>
+<div id="popup">
+    <button id="close-btn"><img src="./images/close-one.png"></button>
+    <h1 class="subtitulo-popup">Filtrar pesquisa</h1>
+    <div class="coolinput" id="caixa__mobile">
+      <label for="input" class="text">Especialidade</label>
+      <input
+        type="text"
+        placeholder="Ex: Cardiologia"
+        name="input"
+        class="input"
+      />
+</div>
+
+    <div class="coolinput"  id="caixa__mobile">
+      <label for="input" class="text">Tipo de exame</label>
+      <input
+        type="text"
+        placeholder="Ex: Tomografia computadorizada"
+        name="input"
+        class="input"
+      />
+</div>
+
+<div class="coolinput"  id="caixa__mobile">
+    <label for="input" class="text">Hospital/Clínica/Laboratório</label>
+    <input
+      type="text"
+      placeholder="Ex: Laboratório Albert Einstein"
+      name="input"
+      class="input"
+    />
+</div>
+
+  <div class="checkbox_filtros">
+      <input id="checkbox" type="radio" name="radio2">
+      <label class="checkbox" for="checkbox">Relatório completo</label>
+      <input id="checkbox" type="radio" name="radio2">
+      <label class="checkbox" for="checkbox">Somente com alterações</label>
+    </div>
+
+      <button type=submit class=botao__form>
+          <span><img src="./images/filter white.png">Filtrar</span>
+      </button>
+      <div class="divisoria"></div>
+  </div>
+</div>
+
+</div>
+
+</div>
+</div>
+</div>
+
+    
+
+
         <div class="pacientes">
-            <h1 class="titulozao">Pacientes</h1>
+            <h1 class="titulozao">Relatórios e análises</h1>
 
             <div class="flexbox-pacientes">
             <section class="flex-esquerda">
@@ -122,46 +181,41 @@
                 <input id="checkbox" type="radio" name="radio2">
                 <label class="checkbox" for="checkbox">Não</label>
               </div></div>
+              <button class="botao" id="popup-btn"><img src="./images/filter white.png" class="icon-button" style="margin-right: 6px;" >Filtrar</button>
+              <button class="botao"><img src="./images/people-search-one.png" style="margin-right: 6px;">Buscar </button>
 
-              <div class="quebra-mobile">
-              <img src="./images/icon busca paciente.png" class="icon-busca"> </section>
-
-              <section class="flex-direita">
-<button class="botao"><img src="./images/add-user.png" class="icon-button" style="margin-right: 6px;">Cadastrar paciente</button>
-</section></div>
+            
             </div>
 
+<div class="abertos-recentemente">
+            <h1 class="subtitulo">Abertos recentemente</h1>
 
-            <h1 class="subtitulo">Histórico de pacientes</h1>
-
-            <div class="table-container">
             <table class="blueTable">
                 <thead>
                 <tr>
                 <th>Nome</th>
-                <th>Data</th>
-                <th class="hide-on-mobile-hour">Horário</th>
                 <th class="hide-on-mobile">Documento</th>
-                <th class="hide-on-mobile">Convênio</th>
-                <th>&nbsp;</th>
+                <th>Geral</th>
+                <th class="hide-on-mobile">Medicações</th>
+                <th>Download</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
                     <td class="td-bold-class"><a href="./perfilpaciente.html">Joana Campos</a></td>
-                    <td>16/06/23</td><td class="hide-on-mobile-hour">10:40AM</td><td class="hide-on-mobile">***-434-***-**</td><td class="hide-on-mobile">Sim</td><td> <a href="./perfilpaciente.html" class="item-active"><img src="./images/file-search-two.png" class="icon-paciente"></a> </td></tr>
+                    <td class="hide-on-mobile">***-434-***-**</td><td><img src="./images/file-search-two.png" class="icon-paciente" id="openPdfPopup"></td><td class="hide-on-mobile"><img src="./images/Treatment List.png" class="icon-paciente" id="openPdfPopup_2"></td><td><img src="./images/Download.png" class="icon-paciente"></td></tr>
                 <tr>
-                <td class="td-bold-class">Marcos Reinaldo</td><td>16/06/23</td><td class="hide-on-mobile-hour">15:30PM</td><td class="hide-on-mobile">***-321-***-**</td><td class="hide-on-mobile">Sim</td><td><img src="./images/file-search-two.png" class="icon-paciente"></td></tr>
+                <td class="td-bold-class">Marcos Reinaldo</td><td class="hide-on-mobile">***-321-***-**</td><td><img src="./images/file-search-two.png" class="icon-paciente"></td><td class="hide-on-mobile"><img src="./images/Treatment List.png" class="icon-paciente"></td><td><img src="./images/Download.png" class="icon-paciente"></td></tr>
                 <tr>
-                <td class="td-bold-class">Bruno Fagundes</td><td>15/06/23</td><td class="hide-on-mobile-hour">13:40PM</td><td class="hide-on-mobile">***-431-***-**</td><td class="hide-on-mobile">Não</td><td><img src="./images/file-search-two.png" class="icon-paciente"></td></tr>
+                <td class="td-bold-class">Bruno Fagundes</td><td class="hide-on-mobile">***-431-***-**</td><td><img src="./images/file-search-two.png" class="icon-paciente"></td><td class="hide-on-mobile"><img src="./images/Treatment List.png" class="icon-paciente"></td><td><img src="./images/Download.png" class="icon-paciente"></td></tr>
                 <tr>
-                <td class="td-bold-class">Heloisa Botelho</td><td>15/06/23</td><td class="hide-on-mobile-hour">09:40AM</td><td class="hide-on-mobile">***-755-***-**</td><td class="hide-on-mobile">Não</td><td><img src="./images/file-search-two.png" class="icon-paciente"></td></tr>
+                <td class="td-bold-class">Heloisa Botelho</td><td class="hide-on-mobile">***-755-***-**</td><td><img src="./images/file-search-two.png" class="icon-paciente"></td><td class="hide-on-mobile"><img src="./images/Treatment List.png" class="icon-paciente"></td><td><img src="./images/Download.png" class="icon-paciente"></td></tr>
                 <tr>
-                <td class="td-bold-class">Allan Albuquerque</td><td>15/06/23</td><td class="hide-on-mobile-hour">11:50AM</td><td class="hide-on-mobile">***-897-***-**</td><td class="hide-on-mobile">Sim</td><td><img src="./images/file-search-two.png" class="icon-paciente"></td></tr>
+                <td class="td-bold-class">Allan Albuquerque</td><td class="hide-on-mobile">***-897-***-**</td><td><img src="./images/file-search-two.png" class="icon-paciente"></td><td class="hide-on-mobile"><img src="./images/Treatment List.png" class="icon-paciente"></td><td><img src="./images/Download.png" class="icon-paciente"></td></tr>
                 <tr>
-                <td class="td-bold-class">Luiza Carrion</td><td>14/06/23</td><td class="hide-on-mobile-hour">14:00PM</td><td class="hide-on-mobile">***-233-***-**</td><td class="hide-on-mobile">Sim</td><td><img src="./images/file-search-two.png" class="icon-paciente"></td></tr>
+                <td class="td-bold-class">Luiza Carrion</td><td class="hide-on-mobile">***-233-***-**</td><td><img src="./images/file-search-two.png" class="icon-paciente"></td><td class="hide-on-mobile"><img src="./images/Treatment List.png" class="icon-paciente"></td><td><img src="./images/Download.png" class="icon-paciente"></td></tr>
                 <tr>
-                <td class="td-bold-class">Caio Myra</td><td>14/06/23</td><td class="hide-on-mobile-hour">12:45PM</td><td class="hide-on-mobile">***-169-***-**</td><td class="hide-on-mobile">Sim</td><td><img src="./images/file-search-two.png" class="icon-paciente"></td></tr>
+                <td class="td-bold-class">Caio Myra</td><td class="hide-on-mobile">***-169-***-**</td><td><img src="./images/file-search-two.png" class="icon-paciente"></td><td class="hide-on-mobile"><img src="./images/Treatment List.png" class="icon-paciente"></td><td><img src="./images/Download.png" class="icon-paciente"></td></tr>
                 </tbody>
                 </tr>
                 <tfoot>
@@ -174,6 +228,24 @@
                 </table>
             </div>
             </div>
+
+
+            <div id="pdfPopup" class="popup__pdf">
+                <div class="popup-content" id="popup-contents">
+                    <button id="close-btn-pdf"><img src="./images/close-one.png"></button><br>
+                    <iframe id="pdfFrame" width="100%" height="100%"></iframe>
+                </div>
+            </div>
+
+            <div id="pdfPopup_2" class="popup__pdf">
+                <div class="popup-content" id="popup-contents">
+                    <button id="close-btn-pdf_2"><img src="./images/close-one.png"></button><br>
+                    <iframe id="pdfFrame_2" width="100%" height="100%"></iframe>
+                </div>
+            </div>
+
+            <script src="popups.js"></script>
   <script src="newFile.js"> </script>
+  <script src="pdfpop.js"> </script>
 </body>
 </html>
