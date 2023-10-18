@@ -5,7 +5,9 @@ html {
   background-color: #EEEEEE !important;
   font-size: 0.85rem !important;
 }
-
+body{
+  margin-bottom: 50px;
+}
 .pacientes {
   padding-top: 5%;
   margin-left: 30rem;
