@@ -129,6 +129,7 @@ html {
     .navbar .menu-items {
       display: flex;
       background-color: #359180;
+      height: 100vh !important;
     }
     
     .navbar .nav-container li {
@@ -156,6 +157,7 @@ html {
       height: 60px;
     }
     
+
     .nav-container .checkbox__burg {
       position: absolute;
       display: block;
